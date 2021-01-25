@@ -27,17 +27,15 @@ _This is a website to keep track of places you've been utilizing object construc
 
 ## Specs
 ```
-Describe: Object utilizes constructor
-Test: add object to constructor
-Code: let paris = new Place ("Paris", "Eiffel Tower", "Winter")
-Expect:
-Place.paris
-{name: "Paris", landmarks: ["Eiffel Tower", "Arc de Triomphe", "Louvre"], season: "Winter"}
-
 Describe: Places{}
 Test: "It should create a "Places" object"
-Code: Places.paris
-Expect:(Places.paris).toEqual{name: "Paris", landmarks: ["Eiffel Tower", "Arc de Triomphe", "Louvre"], season: "Winter"}
+Expect:(paris).toEqual{name: "Paris", landmarks: ["Eiffel Tower", "Arc de Triomphe", "Louvre"], season: "Winter"}
+
+Describe: 
+Test: "It should create a "Places" object"
+Expect:(paris).toEqual{name: "Paris", landmarks: ["Eiffel Tower", "Arc de Triomphe", "Louvre"], season: "Winter"}
+
+
 
 ```
 
