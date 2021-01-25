@@ -1,4 +1,4 @@
-# _Address Book_
+# _Places You've Been_
 
 #### _This project is to practice object constructors and prototypes._
 
@@ -10,19 +10,36 @@
 * _HTML5_
 * _Bootstrap_
 * _JavaScript_
+* _jQuery_
 
 ## Description
 
-_This address book acts as an exercise to practice the concept of objects within objects. It also aims to provide practice with constructor prototypes._
+_This is a website to keep track of places you've been utilizing object constructors and prototypes._
 
 ## Setup/Installation Requirements
 
-* _Go to https://github.com/mekinsie/AddressBook_
+* _Go to https://github.com/Pingel88/places-been_
 * _Navigate to and click the green "Code" button on middle upper right part of webpage._
 * _Copy the HTTPs address to your clipboard._
 * _Open terminal or bash and navigate to the directory you wish to download the repo to._
 * _Type into the terminal "git clone [paste HTTPs address] and press enter._
 * _Open the file named "index.html" in the directory you just downloaded the repo to. This will open the portfolio page in your default web browser._
+
+## Specs
+```
+Describe: Object utilizes constructor
+Test: add object to constructor
+Code: let paris = new Place ("Paris", "Eiffel Tower", "Winter")
+Expect:
+Place.paris
+{name: "Paris", landmarks: ["Eiffel Tower", "Arc de Triomphe", "Louvre"], season: "Winter"}
+
+Describe: Places{}
+Test: "It should create a "Places" object"
+Code: Places.paris
+Expect:(Places.paris).toEqual{name: "Paris", landmarks: ["Eiffel Tower", "Arc de Triomphe", "Louvre"], season: "Winter"}
+
+```
 
 ## Known Bugs
 
