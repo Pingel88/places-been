@@ -31,12 +31,9 @@ Describe: Places{}
 Test: "It should create a "Places" object"
 Expect:(paris).toEqual{name: "Paris", landmarks: ["Eiffel Tower", "Arc de Triomphe", "Louvre"], season: "Winter"}
 
-Describe: 
-Test: "It should create a "Places" object"
-Expect:(paris).toEqual{name: "Paris", landmarks: ["Eiffel Tower", "Arc de Triomphe", "Louvre"], season: "Winter"}
-
-
-
+Describe: paris.landmarks.forEach(function())
+Test: "Add each landmark as an unordered list item"
+Expect: Items in landmarks array to show on an unordered list
 ```
 
 ## Known Bugs
