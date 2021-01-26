@@ -4,11 +4,12 @@ function Places(name, landmarks, season) {
   this.season = season;
   // this.shorthand = shorthand;
 }
-Places.prototype.shorthand(function(){
 
-})
-
-
+Places.prototype.shorthand = function(name){
+  string = this.name;
+  shorthandString = string.split(" ").join("");
+  return shorthandString;
+};
 
 $(document).ready(function() {
   let paris = new Places("Paris", ["Eiffel Tower", "Arc de Triomphe", "Louvre"], "Winter");
@@ -34,15 +35,15 @@ $(document).ready(function() {
         //   }
         // }
         
-        placesArray.forEach(function (place) {
-          // const foundPlaceObject = myPlaceHolder.FindPlaceByName(place);
-          $("#" + place.name + "-name").text(place.name);
-          place.landmarks.forEach(function(landmark) {
-            $("#" + place.name + "-landmarks").append("<li>" + landmark + "</li>");
-          });
-        });
-        console.log("doing something")
-      });
+  placesArray.forEach(function (place) {
+    // const foundPlaceObject = myPlaceHolder.FindPlaceByName(place);
+    $("#" + place.name + "-name").text(place.name);
+    place.landmarks.forEach(function(landmark) {
+      $("#" + place.name + "-landmarks").append("<li>" + landmark + "</li>");
+    });
+  });
+  console.log(landOfMilkAndCookies.shorthand());
+});
 
   // portland.landmarks.forEach(function(landmark) {
   //   $("#portland-landmarks").append("<li>" + landmark + "</li>");
